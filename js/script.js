@@ -179,6 +179,7 @@ $(document).ready(function(){
     // 모니터 스크롤이 80을 지날 경우 메뉴에 on 클래스 추가
     
     $('.m_nav').click(function(){
+        $(this).toggleClass('on')
         $('.nav').slideToggle();
     });
     
