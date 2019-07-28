@@ -272,7 +272,7 @@ em {font-style: normal;}
 #container #contents #cont07 .cont07_box .box_slider .slider div:nth-child(1) .img {width: 529px; height: 476px; top: 0; right: 10%; background: url(../img/event_01.png);}
 #container #contents #cont07 .cont07_box .box_slider .slider div:nth-child(2) .img {width:460px; height:506px; top: 0; right: 10%; background: url(../img/event_02.png);}
 #container #contents #cont07 .cont07_box .box_slider .slider div .img {position: absolute; top:200px; right: 0;}
-#container #contents #cont07 .cont07_box .box_slider .slider div .case_box {position: absolute; left: 20px; top:210px;}
+#container #contents #cont07 .cont07_box .box_slider .slider div .case_box {position: absolute; left: 40px; top:210px;}
 #container #contents #cont07 .cont07_box .box_slider .slider div div .case {position: initial; display: inline-block; width: 30%; margin: 10px;}
 #container #contents #cont07 .cont07_box .box_slider .slider div div .case img {width: 100%;}
 #container #contents #cont07 .cont07_box .box_slider .slider div div .case p {position: inherit; top: 0; left: 0; padding: 10px; box-sizing: border-box; font-size: 1.2em; font-weight: bold; text-align: center; color: #fff;}
@@ -318,6 +318,7 @@ em {font-style: normal;}
     #container #contents #cont06 .cont06_left_box div {width: calc(100% - 100px); left:0;}
     #container #contents #cont06.active .cont06_right_box i {right:50%; font-size: 1em;}
     #container #contents #cont06 .cont06_right_box div { width:calc(100% - 100px);}
+    #container #contents #cont07 .cont07_box .box_slider .slider div .case_box {left:20px;}
 }
 
 @media all and (max-width:1024px){
