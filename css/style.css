@@ -392,7 +392,7 @@ em {font-style: normal;}
     #container #contents #cont03.active a {top:45%;}
     #container #contents #cont03 .appliances {top:70%;}
     #container #contents #cont03.active .cont03_slider {display: none;}
-    #container #contents #cont04 h2 {font-size: 1.2em; top:15%; z-index: 10; width:85%;}
+    #container #contents #cont04 h2 {font-size: 1.2em; top:15%; z-index: 1; width:85%;}
     #container #contents #cont04 .cont04_left {display: none;}
     #container #contents #cont04 .cont04_right {top: 20%;}
     #container #contents #cont04.active .cont04_right {display: none;}
@@ -436,7 +436,7 @@ em {font-style: normal;}
     #container #contents #cont03.active h2 {font-size: 1.5em;}
     #container #contents #cont04 ul {bottom:5%;}
     #container #contents #cont04 ul li p:before {content: ''; position: absolute; left: 0; top: 0; display: block; width:100%; height:100%; background:linear-gradient(to top,#000, transparent);}
-    #container #contents #cont06 .cont06_left_box {display: block; width: 100%; height: 40vh; margin-top: 20vh;}
+    #container #contents #cont06 .cont06_left_box {display: block; width: 100%; height: 40vh; margin-top: 15vh;}
     #container #contents #cont06 .cont06_right_box {display: block; width: 100%; height: 40vh;}
     #container #contents #cont06.active .cont06_left_box div {top:10%; }
     #container #contents #cont06.active .cont06_right_box div {top:0; }
@@ -458,6 +458,6 @@ em {font-style: normal;}
     #container #contents #cont07 .cont07_box .box_slider .slider div div .case {display: block;  width:80%; height: 240px;}
     #container #contents #cont07 .cont07_box .box_slider .slider div div .case p {font-size: 1em;}
     
-    .swiper-button-prev {left: 10px; top: 70%;}
-    .swiper-button-next {right: 80%; top: 70%;}
+    #container #contents #cont07 .cont07_box .box_slider .swiper-button-prev {left: 10px; top: 70%;}
+    #container #contents #cont07 .cont07_box .box_slider .swiper-button-next {right: 80%; top: 70%;}
 }
