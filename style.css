@@ -392,7 +392,7 @@ em {font-style: normal;}
     #container #contents #cont03.active a {top:45%;}
     #container #contents #cont03 .appliances {top:70%;}
     #container #contents #cont03.active .cont03_slider {display: none;}
-    #container #contents #cont04 h2 {font-size: 1.2em; top:15%; z-index: 1; width:85%;}
+    #container #contents #cont04 h2 {font-size: 1.2em; top:15%; z-index: 2; width:85%;}
     #container #contents #cont04 .cont04_left {display: none;}
     #container #contents #cont04 .cont04_right {top: 20%;}
     #container #contents #cont04.active .cont04_right {display: none;}
