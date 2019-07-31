@@ -45,6 +45,7 @@ em {font-style: normal;}
 /* 스킵 영역 */
 #skip {position: fixed; top:-40px; width: 100%; z-index: 99; transition: all .6s;}
 #skip.on {top: 0;}
+#skip h2 {font-size: 0; width: 0; height: 0;}
 #skip ul {position: relative;}
 #skip ul li {position: absolute; top:-40px; width: 100%; text-align: center; transition: all .6s;}
 #skip.on ul li.on {top:0; z-index: 99;}
@@ -74,7 +75,7 @@ em {font-style: normal;}
 #container #header .nav ul li.active a {color:#fff;}
 
 #container #header .m_nav {display: none; position: absolute; top:10px; right: 0; width:44px; height: 44px; background:#fff; border-radius: 20px; cursor: pointer; transition: all .6s;}
-#container #header .m_nav .m_nav_bar {display: block; position: absolute; left:50%; top:50%; transform: translate(-50%, -50%) scale(1,1); width:calc(100% - 20px); height: 3px; background: #1428a0; border-radius: 20px; transition: all .6s;}
+#container #header .m_nav .m_nav_bar {display: block; position: absolute; left:50%; top:50%; transform: translate(-50%, -50%) scale(1,1); width:calc(100% - 20px); height: 3px; background: #1428a0; border-radius: 20px; transition: all .6s; font-size: 0;}
 #container #header .m_nav .m_nav_bar:before {content: ''; display: block; position: absolute; top:-5px; width:100%; height: 3px; background: #1428a0; border-radius: 20px; transition: all .6s;transition: all .6s;}
 #container #header .m_nav .m_nav_bar:after {content: ''; display: block; position: absolute; bottom:-5px; width:100%; height: 3px; background: #1428a0; border-radius: 20px; transition: all .6s;}
 
