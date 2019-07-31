@@ -154,15 +154,19 @@ $(document).ready(function(){
     
     // 마우스 휠 패럴랙스 효과 스크립트
     
-    $(window).resize(function(){
+    if($(window).width() > 768 ){
+        $(window).resize(function(){
         var h = $(window).height();
         
         //console.log(winHeight);
         $('#container #contents > div').css({ height : h });
         
-    });
-    
-    $(window).trigger('resize');
+        });
+
+        $(window).trigger('resize');
+    }else if($(window).width() < 768){
+        $('#contents > div').css("height","100%");
+    }
     
     // 화면의 사이즈가 변경되었을 경우 height 값을 맞춰주는 스크립트
     
@@ -253,4 +257,5 @@ $(document).ready(function(){
     });
     
     // 우측 메뉴 이동 스크립트
+    
 });
