@@ -86,8 +86,8 @@ em {font-style: normal;}
 
 /* 메인 영역 */
 /* 박스 영역 */
-#container #contents > div {width:100%; height: 100vh; overflow: hidden;}
-#container #contents > div > div {height: 100vh;}
+#container #contents > section {width:100%; height: 100vh; overflow: hidden;}
+#container #contents > section > div {height: 100vh;}
 #container #contents #cont01 {background:linear-gradient(20deg, #6cd3dc, #0066ff, #133e7c);}
 #container #contents #cont02 {background:linear-gradient(-20deg, #596ed8, #6a59d8, #ca59d8);}
 #container #contents #cont03 {background:linear-gradient(45deg, #ffdbdb, #ffc0c0, #ff9d9d);}
