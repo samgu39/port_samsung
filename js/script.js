@@ -10,28 +10,28 @@ $(document).ready(function(){
     // 새로 고침시 자동으로 상단으로 올라가는 스크립트
     
     var skip = $('#skip');
-    var skipnav = $('#skip ul li')
+    var skipNav = $('#skip ul li')
     
     skip.focusin(function(){
         $(this).addClass('on');
     });
     
-    skipnav.focusin(function(){
+    skipNav.focusin(function(){
         $(this).addClass('on').siblings().removeClass('on');
     });
-    skipnav.focusout(function(){
+    skipNav.focusout(function(){
         $(this).removeClass('on');
     });
     
     // tab 버튼 클릭 시 skip 메뉴 활성화
     
-    var popup_port_close = $('.portfolio_popup .portfolio_popup_close a');
-    var popup_port = $('.portfolio_popup');
+    var popupPortClose = $('.portfolio_popup .portfolio_popup_close a');
+    var popupPort = $('.portfolio_popup');
     
-    popup_port_close.click(function(e){
+    popupPortClose.click(function(e){
         e.preventDefault();
         
-        popup_port.hide(800);
+        popupPort.hide(800);
     });
     
     // 포트폴리오 홈페이지 명시 팝업창 닫기 스크립트
@@ -53,10 +53,10 @@ $(document).ready(function(){
     nav.click(function(e){
         e.preventDefault();
         
-        var navck = $(this);
-        var navidx = navck.index();
+        var navClick = $(this);
+        var navIdx = navClick.index();
         //console.log(navidx);
-        var section = contents.eq(navidx);
+        var section = contents.eq(navIdx);
         var offset = section.offset().top;
         //console.log(offset);
         
@@ -67,13 +67,13 @@ $(document).ready(function(){
     
     $(window).scroll(function(){
         var winScroll = $(this).scrollTop();
-        var ftnav = $('#container #footer .box ul li');
+        var ftNav = $('#container #footer .box ul li');
         
         if(winScroll >= contents.eq(0).offset().top){
             contents.removeClass('active');
             contents.eq(0).addClass('active');
-            ftnav.removeClass('active');
-            ftnav.eq(0).addClass('active');
+            ftNav.removeClass('active');
+            ftNav.eq(0).addClass('active');
             nav.removeClass('active');
             nav.eq(0).addClass('active');
             navBox.css({ left : nav.eq(0).position().left, width : nav.eq(0).width() });
@@ -81,8 +81,8 @@ $(document).ready(function(){
         };
         if(winScroll >= contents.eq(1).offset().top - 300){
             contents.eq(1).addClass('active');
-            ftnav.removeClass('active');
-            ftnav.eq(1).addClass('active');
+            ftNav.removeClass('active');
+            ftNav.eq(1).addClass('active');
             nav.removeClass('active');
             nav.eq(1).addClass('active');
             navBox.css({ left : nav.eq(1).position().left, width : nav.eq(1).width() });
@@ -90,8 +90,8 @@ $(document).ready(function(){
         };
         if(winScroll >= contents.eq(2).offset().top - 300){
             contents.eq(2).addClass('active');
-            ftnav.removeClass('active');
-            ftnav.eq(2).addClass('active');
+            ftNav.removeClass('active');
+            ftNav.eq(2).addClass('active');
             nav.removeClass('active');
             nav.eq(2).addClass('active');
             navBox.css({ left : nav.eq(2).position().left, width : nav.eq(2).width() });
@@ -99,8 +99,8 @@ $(document).ready(function(){
         };
         if(winScroll >= contents.eq(3).offset().top - 300){
             contents.eq(3).addClass('active');
-            ftnav.removeClass('active');
-            ftnav.eq(3).addClass('active');
+            ftNav.removeClass('active');
+            ftNav.eq(3).addClass('active');
             nav.removeClass('active');
             nav.eq(3).addClass('active');
             navBox.css({ left : nav.eq(3).position().left, width : nav.eq(3).width() });
@@ -108,8 +108,8 @@ $(document).ready(function(){
         };
         if(winScroll >= contents.eq(4).offset().top - 300){
             contents.eq(4).addClass('active');
-            ftnav.removeClass('active');
-            ftnav.eq(4).addClass('active');
+            ftNav.removeClass('active');
+            ftNav.eq(4).addClass('active');
             nav.removeClass('active');
             nav.eq(4).addClass('active');
             navBox.css({ left : nav.eq(4).position().left, width : nav.eq(4).width() });
@@ -117,8 +117,8 @@ $(document).ready(function(){
         };
         if(winScroll >= contents.eq(5).offset().top - 300){
             contents.eq(5).addClass('active');
-            ftnav.removeClass('active');
-            ftnav.eq(5).addClass('active');
+            ftNav.removeClass('active');
+            ftNav.eq(5).addClass('active');
             nav.removeClass('active');
             nav.eq(5).addClass('active');
             navBox.css({ left : nav.eq(5).position().left, width : nav.eq(5).width() });
@@ -126,8 +126,8 @@ $(document).ready(function(){
         };
         if(winScroll >= contents.eq(6).offset().top - 300){
             contents.eq(6).addClass('active');
-            ftnav.removeClass('active');
-            ftnav.eq(6).addClass('active');
+            ftNav.removeClass('active');
+            ftNav.eq(6).addClass('active');
             nav.removeClass('active');
             nav.eq(6).addClass('active');
             navBox.css({ left : nav.eq(6).position().left, width : nav.eq(6).width() });
@@ -251,20 +251,20 @@ $(document).ready(function(){
     
     // 감성캠핑샵 / 키친라이프샵 중 하나를 선택할 경우 해당 div에 active 클래스 추가
     
-    var ftnav = $('#container #footer .box ul li');
+    var ftNav = $('#container #footer .box ul li');
     
-    ftnav.click(function(e){
+    ftNav.click(function(e){
         e.preventDefault();
         
-        var navck = $(this);
-        var navidx = navck.index();
+        var navClick = $(this);
+        var navIdx = navClick.index();
         //console.log(navidx);
-        var section = contents.eq(navidx);
+        var section = contents.eq(navIdx);
         var offset = section.offset().top;
         //console.log(offset);
         
         $('html, body').animate({ scrollTop : offset },500);
-        navck.addClass('active').siblings().removeClass('active');
+        navClick.addClass('active').siblings().removeClass('active');
     });
     
     // 우측 메뉴 이동 스크립트
