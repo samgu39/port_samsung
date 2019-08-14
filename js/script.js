@@ -29,6 +29,8 @@ $(document).ready(function(){
     var popup_port = $('.portfolio_popup');
     
     popup_port_close.click(function(e){
+        e.preventDefault();
+        
         popup_port.hide(800);
     });
     
