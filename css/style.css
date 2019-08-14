@@ -51,6 +51,16 @@ em {font-style: normal;}
 #skip.on ul li.on {top:0; z-index: 99;}
 #skip ul li a {display: block; padding:10px 0; width: 100%; height: 100%; color:#fff; background:#1428a0;}
 
+/* portfolio_popup */
+.portfolio_popup {display: block; position: fixed; left:20px; top:20px; width: 350px; height: 180px; background: rgba(255,255,255,0.8); border: 2px solid #1428a0; border-radius: 6px; padding: 20px; box-sizing: border-box; z-index: 9999; overflow: hidden; box-shadow: 2px 2px 4px rgba(0,0,0,0.4);}
+.portfolio_popup .portfolio_popup_top {position: absolute; left:0; top:0; width: 100%; height: 24px; background: linear-gradient(90deg, #1428a0, #000);}
+.portfolio_popup .portfolio_popup_top h2 {display: inline-block; font-family: 'Noto Sans KR', sans-serif; font-size: 0.9em; color: #fff; text-indent: 20px; margin-top:4px; user-select: none;}
+.portfolio_popup .portfolio_popup_bottom p {margin-top:20px; font-family: 'Noto Sans KR', sans-serif; letter-spacing: -1px; line-height: 1.2em;}
+.portfolio_popup .portfolio_popup_bottom p a {font-family: 'Raleway', sans-serif; font-weight: bold; font-size: 0.9em; color: #1428a0; text-decoration: underline; }
+.portfolio_popup .portfolio_popup_close a {position: absolute; right:4px; top:4px; display: block; width: 16px; height: 16px;}
+.portfolio_popup .portfolio_popup_close a:before {content: ''; display: block; position: absolute; right: 0px; top: 6px; transform: rotate(45deg); width: 100%; height: 2px; background: #fff;}
+.portfolio_popup .portfolio_popup_close a:after {content: ''; display: block; position: absolute; right: 0px; top: 6px; transform: rotate(-45deg); width: 100%; height: 2px; background: #fff; z-index: 1;}
+
 /* 전체 영역 */
 
 /* 헤더 영역 */
