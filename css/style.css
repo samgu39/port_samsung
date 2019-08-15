@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {font-size: 1em; font-weight: normal; margin:0;}
 em {font-style: normal;}
 .wrap {max-width:1440px; margin:0 auto; position: relative;}
 .ir {font-size: 0; width: 0; height: 0;}
+br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif !important;}
 
 /* 스킵 영역 */
 #skip {position: fixed; top:-40px; width: 100%; z-index: 99; transition: all .6s;}
@@ -119,7 +120,7 @@ em {font-style: normal;}
 #container #contents #cont01 .phone:after {content: ''; display: block; width:322px; height:640px; background:url(../img/s10_front.png) no-repeat; position: absolute; right: 100px; transition: all .6s;}
 #container #contents #cont01 .phone:hover:after {right:0; transform: translateX(0);}
 #container #contents #cont01 .bottom_menu {opacity: 0; position: absolute; bottom:-100px; width: 100%; transition: all 2s;}
-#container #contents #cont01 .bottom_menu > div {display: inline-block; width:25%; margin-left:-4px; transition: all .3s;}
+#container #contents #cont01 .bottom_menu > div {display: inline-block; width:25%; margin-left:-6px; transition: all .3s;}
 #container #contents #cont01 .bottom_menu > div:first-child {margin:0;}
 #container #contents #cont01 .bottom_menu > div .box {position: absolute; bottom: -170px; width: 25%; height: 230px; border-radius: 20px 20px 0 0 ; text-align: center; transition: all .6s;}
 #container #contents #cont01 .bottom_menu > div .box:hover {bottom:0; background: #fff;}
@@ -161,7 +162,7 @@ em {font-style: normal;}
 #container #contents #cont03 a {opacity: 0; position: absolute; top: 35%; left: 0; display: block; padding: 15px; color: #fff; font-size: 1.2em; border: 2px solid #fff; border-radius: 50px; letter-spacing: -1px; transition: all .6s; z-index: 1;}
 #container #contents #cont03 a:hover {background:#fff; color:#000;}
 #container #contents #cont03 .cont03_slider {opacity: 0; position: absolute; bottom:0; width: 100%; transition: all 2s;}
-#container #contents #cont03 .cont03_slider .slider div {display: inline-block; width:20%; height:200px; margin-left:-4px;}
+#container #contents #cont03 .cont03_slider .slider div {display: inline-block; width:20%; height:200px; margin-left:-6px;}
 #container #contents #cont03 .cont03_slider .slider div:first-child {margin:0;}
 #container #contents #cont03 .cont03_slider .slider div img {width:100%; height:100%;}
 #container #contents #cont03 .cont03_slider .swiper-button-prev {background: url(../img/slide_btn.png) no-repeat; transform: rotate(180deg); width: 50px; height: 50px;}
@@ -196,7 +197,7 @@ em {font-style: normal;}
 #container #contents #cont04 .cont04_right h3 {font-size: 1.5em; font-weight: bold; color:#333; margin: 10px 0;}
 #container #contents #cont04 .cont04_right p {color:#666;}
 #container #contents #cont04 ul {width: 100%; position: absolute; bottom: 10%; overflow: hidden; line-height: 0.15; z-index: 1;}
-#container #contents #cont04 ul li {opacity: 0; display: inline-block; width: 33.3333%; margin-left: -4px; overflow: hidden; transform: scale(0,0);transform-origin:  bottom center; transition:  all 2s;}
+#container #contents #cont04 ul li {opacity: 0; display: inline-block; width: 33.3333%; margin-left: -6px; overflow: hidden; transform: scale(0,0);transform-origin:  bottom center; transition:  all 2s;}
 #container #contents #cont04 ul li:first-child {margin: 0;}
 #container #contents #cont04 ul li img {width: 100%; height:100%; transform: scale(1,1); transform-origin: center center; transition: all .3s;}
 #container #contents #cont04 ul li:hover img {transform: scale(1.1,1.1);}
@@ -217,8 +218,10 @@ em {font-style: normal;}
 #container #contents #cont05 h2 {opacity: 0; position: absolute; top:10%; left:80%; font-size: 1.8em; color: #fff; user-select: none; transition: all 2s; z-index: 1; white-space: nowrap;}
 #container #contents #cont05 h2 strong {font-size: 2.2em; font-weight: bold;}
 #container #contents #cont05 .cont05_box {position: absolute; right: 0; bottom:5%; width: 800px; z-index: 1;}
-#container #contents #cont05 .cont05_box div {opacity: 0; display: inline-block; vertical-align: middle; width: 32%; height: 300px; padding: 10px; box-sizing: border-box; background: linear-gradient(-60deg, #4e0596, #3c0055, #000); border-radius: 10px 40px 10px 40px; margin: 4px; text-align: center; color:#fff; transform: skewY(-10deg); transition: all .6s;}
+#container #contents #cont05 .cont05_box div {opacity: 0; display: inline-block; vertical-align: middle; width: calc(-8px + 33.33%); height: 300px; padding: 10px; box-sizing: border-box; background: linear-gradient(-60deg, #4e0596, #3c0055, #000); border-radius: 10px 40px 10px 40px; margin: 4px; text-align: center; color:#fff; transform: skewY(-10deg); transition: all .6s;}
 #container #contents #cont05 .cont05_box div:nth-child(2n) { margin-top: 30px; border-radius: 40px 10px 40px 10px;}
+#container #contents #cont05 .cont05_box div:first-child, #container #contents #cont05 .cont05_box div:nth-child(4n) {margin-left:0;}
+#container #contents #cont05 .cont05_box div:nth-child(3n) {margin-right: 0;}
 #container #contents #cont05 .cont05_box div:hover {background: #fff; color:#333; border-radius: 40px 10px 40px 10px;}
 #container #contents #cont05 .cont05_box div:hover:nth-child(2n) { border-radius: 10px 40px 10px 40px;}
 #container #contents #cont05 .cont05_box div h3 {font-size: 1.3em; margin: 10px 0; font-weight: bold;}
@@ -242,6 +245,7 @@ em {font-style: normal;}
 #container #contents #cont06 .cont06_topmenu div > div em {opacity: 0; display: block; padding: 10px; color:#666; transition: all 2s; transition-delay: 0.6s;}
 #container #contents #cont06 .cont06_topmenu .liner {position: absolute; left:50%; transform: translateX(-50%); width:1px; height: 0; background:#fff; padding: 0; transition: all 2s;}
 #container #contents #cont06 .cont06_left_box {width:50%; height: 100vh; overflow: hidden; position: relative; display: inline-block;}
+#container #contents #cont06 .cont06_left_box:first-child {margin: 0;}
 #container #contents #cont06 .cont06_left_box i {opacity: 0; position: absolute; left: 20%; transform: translateX(-50%); top: 30%; color: #fff; text-align: center; font-size: 1.2em; line-height: 1.5em; font-style: normal; transition: all 2s;}
 #container #contents #cont06 .cont06_left_box div {opacity: 0; width: calc(100% - 100px); margin: 50px; position: absolute; top: 40%; background: #fff; padding: 10px; box-sizing: border-box; transform: scale(0,0); transition: all 2s;}
 #container #contents #cont06 .cont06_left_box div a {display: block; width: 100%; height: 100%; border: 1px solid #ccc;}
@@ -249,7 +253,7 @@ em {font-style: normal;}
 #container #contents #cont06 .cont06_left_box div a h4 {font-family: 'Roboto Condensed', sans-serif; text-align: center;}
 #container #contents #cont06 .cont06_left_box div a p {text-align: center; padding: 20px; font-weight: bold; font-size: 1.2em;}
 #container #contents #cont06 .cont06_left_box div a p em {position: inherit; display: block; font-size: 0.8em; font-weight: normal; color: #666; transform: inherit; padding: 10px;}
-#container #contents #cont06 .cont06_right_box {width:50%; height: 100vh; overflow: hidden; position: relative; display: inline-block; margin-left: -4px;}
+#container #contents #cont06 .cont06_right_box {width:50%; height: 100vh; overflow: hidden; position: relative; display: inline-block; margin-left: -6px;}
 #container #contents #cont06 .cont06_right_box i {opacity: 0; position: absolute; right: 20%; transform: translateX(50%); top: 30%; color: #fff; text-align: center; font-size: 1.2em; line-height: 1.5em; font-style: normal; transition: all 2s;}
 #container #contents #cont06 .cont06_right_box div {opacity: 0; width: calc(100% - 100px); margin: 50px; position: absolute; top: 40%; background: #fff; padding: 10px; box-sizing: border-box; transform: scale(0,0); transition: all 2s;}
 #container #contents #cont06 .cont06_left_box div a {display: block; width: 100%; height: 100%; border: 1px solid #ccc;}
