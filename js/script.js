@@ -69,6 +69,7 @@ $(document).ready(function(){
         var winScroll = $(this).scrollTop();
         var ftNav = $('#container #footer .box ul li');
         
+        /*
         if(winScroll >= contents.eq(0).offset().top){
             contents.removeClass('active');
             contents.eq(0).addClass('active');
@@ -133,6 +134,22 @@ $(document).ready(function(){
             navBox.css({ left : nav.eq(6).position().left, width : nav.eq(6).width() });
             n = 6;
         };
+        */
+        
+        for(var i = 0; i < contents.length; i++){
+          if(winScroll >= contents.eq(i).offset().top){
+              contents.removeClass('active');
+              contents.eq(i).addClass('active');
+              ftNav.removeClass('active');
+              ftNav.eq(i).addClass('active');
+              nav.removeClass('active');
+              nav.eq(i).addClass('active');
+              navBox.css({ left : nav.eq(i).position().left, width : nav.eq(i).width() });
+              n = i;
+          }
+            
+        };
+        
     });
     
     // div가 화면에 닿으면 active 클래스 추가, 상단 및 우측 메뉴 변동
