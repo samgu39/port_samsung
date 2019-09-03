@@ -378,9 +378,9 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     #container #contents #cont04 h2 {font-size: 2em;}
     #container #contents #cont04 ul {bottom:-50%;}
     #container #contents #cont04 ul li { display: block; margin:0; width:100%;}
-    #container #contents #cont04 ul li img { width: 250px; height: 100%;}
+    #container #contents #cont04 ul li img {height: 100%;}
     #container #contents #cont04 ul li:hover img {transform: scale(1,1);}
-    #container #contents #cont04 ul li p {bottom: 0; left: 250px; width: calc(100% - 250px); height: 125px; line-height: 1.2em;}
+    #container #contents #cont04 ul li p {bottom: 0; left: 0; width: calc(100% - 250px); height: 125px; line-height: 1.2em;}
     #container #contents #cont04 .cont04_right {top:35%;}
     #container #contents #cont04 .bg {right: -17%; top: -8%;}
     #container #contents #cont05 .cont05_box { width:100%; right: -5%;}
@@ -404,16 +404,17 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     #container #contents #cont02 a {right: 50%; transform: translateX(50%); font-size: 1em;}
     #container #contents #cont02.active a {bottom: 5%;}
     #container #contents #cont03 h2 {top:15%;}
-    #container #contents #cont03 p {font-size: 1em;}
+    #container #contents #cont03.active p {font-size: 0.9em;}
     #container #contents #cont03.active a {top:45%;}
     #container #contents #cont03 .appliances {top:70%;}
     #container #contents #cont03.active .cont03_slider {display: none;}
-    #container #contents #cont04 h2 {font-size: 1.2em; top:15%; z-index: 2; width:85%;}
+    #container #contents #cont04.active h2 {font-size: 1.8em; top:15%; z-index: 2; width:70%;}
     #container #contents #cont04 .cont04_left {display: none;}
     #container #contents #cont04 .cont04_right {top: 20%;}
     #container #contents #cont04.active .cont04_right {display: none;}
     #container #contents #cont04 ul li img {height: 150px;}
     #container #contents #cont04 ul li p {height: 150px;}
+    #container #contents #cont04 ul li:hover p {width: 100%; left: 0;}
     #container #contents #cont05 h2 {font-size: 1.1em; top:15%;}
     #container #contents #cont05 .cont05_box {bottom: 5%;}
     #container #contents #cont05 .cont05_box h2 {font-size: 1.1em; top:15%;}
@@ -423,10 +424,12 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     #container #contents #cont05 a {left:5%;}
     #container #contents #cont05.active a {bottom:5%;}
     #container #contents #cont05 .bg {left:-30%; bottom:-10%;}
+    #container #contents #cont06 > div {overflow: hidden;}
     #container #contents #cont06 .cont06_topmenu {top:66px; height: 95px;}
     #container #contents #cont06 .cont06_topmenu div > div h2 {font-size: 1.5em; height: 70px; line-height: 70px;}
     #container #contents #cont06.active .cont06_topmenu .liner {display: none;}
-    #container #contents #cont06 .cont06_left_box {display: block; width:100%; height: 40vh; margin-top: 20vh;}
+    #container #contents #cont06 .cont06_left_box {display: block; width:100%; height: 40vh;}
+    #container #contents #cont06 .cont06_left_box:first-child {margin-top: 20vh;}
     #container #contents #cont06 .cont06_topmenu div > div em {display: none;}
     #container #contents #cont06 .cont06_right_box {display: block; width:100%; height: 40vh;}
     #container #contents #cont06.active .cont06_left_box i {display: none;}
@@ -443,7 +446,8 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     #container #contents #cont07 h2 {font-size: 2.5em;}
     #container #contents #cont07 .cont07_box .box_slider .slider div h3 {display: none;}
     #container #contents #cont07 .cont07_box .box_slider .slider div .case_box:after {content: ''; display: block; width:86%; height: 50%; position: absolute; bottom: -60%; background:linear-gradient(to top,#fff, transparent); box-shadow: 0px 30px 10px rgba(255,255,255,0.8); }
-
+    #container #footer .box {right: 5px; z-index: 1;}
+    #container #footer .box ul li {margin: 15px; width: 10px; height: 10px;}
 }
 
 @media all and (max-width:600px){
@@ -460,6 +464,7 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
 }
 
 @media all and (max-width:480px){
+    .portfolio_popup {width: calc(100% - 40px);}
     #container #contents #cont01 h2 {font-size: 2.5em;}
     #container #contents #cont01.active h2 {top:15%;}
     #container #contents #cont01 p {font-size: 1em; width:90%; bottom:70%;}
