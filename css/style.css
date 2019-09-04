@@ -79,8 +79,8 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
 #container #header.on {background:rgba(255,255,255,0.8);}
 #container #header.on .logo {background-position: 0 0;}
 #container #header.on .nav ul li a {color:#000;}
-#container #header .nav .bar {position: absolute; left:0; bottom:0; width: 105px;  height:100%; background:#1428a0; transition: all .3s; z-index: -1;}
-#container #header .nav .bar:before {content: ''; position: absolute; left:50%; transform: translateX(-50%); bottom:-10px; display: block; width:0; height:0; border-top:10px solid #1428a0; border-left:10px solid transparent; border-right:10px solid transparent; transition: all .6s;}
+#container #header .nav .bar {position: absolute; left:0; bottom:0; width: 105px; height:100%; background:#1428a0; transition: all .3s; z-index: -1;}
+#container #header .nav .bar:before {content: ''; position: absolute; left:50%; transform: translateX(-50%); bottom:-10px; width:0; height:0; border-top:10px solid #1428a0; border-left:10px solid transparent; border-right:10px solid transparent; transition: all .6s;}
 #container #header .nav:hover .bar {background:#1428a0;}
 #container #header .nav:hover .bar:before {border-top:10px solid #1428a0;}
 #container #header .nav ul li:hover a {color:#fff;}
@@ -101,7 +101,7 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
 #container #contents > section > div {height: 100vh;}
 #container #contents #cont01 {background:linear-gradient(20deg, #6cd3dc, #0066ff, #133e7c);}
 #container #contents #cont02 {background:linear-gradient(-20deg, #596ed8, #6a59d8, #ca59d8);}
-#container #contents #cont03 {background:linear-gradient(45deg, #ffdbdb, #ffc0c0, #ff9d9d);}
+#container #contents #cont03 {background:linear-gradient(45deg, #85d0ca, #8aa2e4, #9680d2);}
 #container #contents #cont04 {background:linear-gradient(60deg, #beaded, #cacaf6, #c8defd);}
 #container #contents #cont05 {background:linear-gradient(230deg, #0005d7, #6a00eb, #9500e5);}
 #container #contents #cont06 {position: relative; background:url(../img/cont06_bg.jpg) no-repeat; background-size: cover; overflow: hidden;}
@@ -110,8 +110,8 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
 #container #contents #cont07:before {content: ''; position: absolute; display: block; width:100%; height:100vh; background:url(../img/cont07_bg.jpg) no-repeat; background-size: cover; background-attachment: fixed; filter: blur(3px);}
 
 /* 컨텐츠 영역 */
-#container #contents #cont01 h2 {opacity: 0; position: absolute; top:10%; left:0; width: 0; font-family: 'Roboto Condensed', sans-serif; font-size: 5em; font-weight: bold; color: #fff; user-select: none; overflow: hidden; transition: all 6s; white-space: nowrap; z-index: 1;}
-#container #contents #cont01 p {opacity: 0; position: absolute; bottom:55%; left:-10%; font-size: 1.2em; color:#fff; z-index: 1; transition: all 3s;}
+#container #contents #cont01 h2 {opacity: 0; position: absolute; top:10%; left:0; width: 0; font-family: 'Roboto Condensed', sans-serif; font-size: 5em; font-weight: bold; color: #fff; user-select: none; overflow: hidden; transition: opacity 6s; white-space: nowrap; z-index: 1;}
+#container #contents #cont01 p {opacity: 0; position: absolute; bottom:55%; left:-10%; font-size: 1.2em; color:#fff; z-index: 1; transition: opacity 3s;}
 #container #contents #cont01 a {opacity: 0; position: absolute; bottom: 40%; left: 0; display: block; padding: 15px; color: #fff; font-size: 1.2em; border: 2px solid #fff; border-radius: 50px; letter-spacing: -1px; z-index: 1; transition: all .6s;}
 #container #contents #cont01 a:hover {background:#fff; color:#000;}
 #container #contents #cont01 .phone {opacity: 0; width: 644px; height: 640px; position: absolute; right: 0; top: 20%; z-index: 0; transition: all 6s;}
@@ -167,6 +167,7 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
 #container #contents #cont03 .cont03_slider .slider div img {width:100%; height:100%;}
 #container #contents #cont03 .cont03_slider .swiper-button-prev {background: url(../img/slide_btn.png) no-repeat; transform: rotate(180deg); width: 50px; height: 50px;}
 #container #contents #cont03 .cont03_slider .swiper-button-next {background: url(../img/slide_btn.png) no-repeat; width: 50px; height: 50px;}
+#container #contents #cont03 .swiper-pagination-bullet-active {background: #85d0ca;}
 #container #contents #cont03 .appliances {opacity: 0; display: block; position: absolute; right:-10%; top:50%; transform: translateY(-50%); width:849px; height:271px; overflow: hidden; transition: all 2s;}
 #container #contents #cont03 .appliances div {width:200%; height:100%; background:url(../img/box03_bg.png) repeat-x; animation: scroll 8s linear infinite;}
 @keyframes scroll {
@@ -181,7 +182,7 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
 #container #contents #cont03.active .cont03_slider {opacity: 1; bottom:5%;}
 #container #contents #cont03.active .appliances {opacity: 1; right: 0;}
 
-#container #contents #cont04 h2 {opacity: 0; position: absolute; top:10%; left:-10%; font-size: 3em; font-weight: bold; color: #fff; user-select: none; text-shadow: 2px 2px 12px rgba(255,255,255,0.6); z-index: 1; transition: all 2s;}
+#container #contents #cont04 h2 {opacity: 0; position: absolute; top:10%; left:-10%; font-size: 2.4em; font-weight: bold; color: #fff; user-select: none; text-shadow: 2px 2px 12px rgba(255,255,255,0.6); z-index: 1; transition: all 2s;}
 #container #contents #cont04 .cont04_left {opacity: 0; position: absolute; left:0; top:20%; display: inline-block; width:550px; height:300px; transition: all .6s; z-index: 1;}
 #container #contents #cont04 .cont04_left:hover {animation: rainbow 4s infinite;}
 @keyframes rainbow {
@@ -246,7 +247,7 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
 #container #contents #cont06 .cont06_topmenu .liner {position: absolute; left:50%; transform: translateX(-50%); width:1px; height: 0; background:#fff; padding: 0; transition: all 2s;}
 #container #contents #cont06 .cont06_left_box {width:50%; height: 100vh; overflow: hidden; position: relative; display: inline-block;}
 #container #contents #cont06 .cont06_left_box:first-child {margin: 0;}
-#container #contents #cont06 .cont06_left_box i {opacity: 0; position: absolute; left: 20%; transform: translateX(-50%); top: 30%; color: #fff; text-align: center; font-size: 1.2em; line-height: 1.5em; font-style: normal; transition: all 2s;}
+#container #contents #cont06 .cont06_left_box i {opacity: 0; position: absolute; left: 50%; transform: translateX(-50%); top: 30%; color: #fff; text-align: center; font-size: 1.2em; line-height: 1.5em; font-style: normal; transition: opacity 2s;}
 #container #contents #cont06 .cont06_left_box div {opacity: 0; width: calc(100% - 100px); margin: 50px; position: absolute; top: 40%; background: #fff; padding: 10px; box-sizing: border-box; transform: scale(0,0); transition: all 2s;}
 #container #contents #cont06 .cont06_left_box div a {display: block; width: 100%; height: 100%; border: 1px solid #ccc;}
 #container #contents #cont06 .cont06_left_box div a img {display: block; margin: 0 auto; padding: 10px; width: 200px; height: 200px; overflow: hidden;}
@@ -254,7 +255,7 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
 #container #contents #cont06 .cont06_left_box div a p {text-align: center; padding: 20px; font-weight: bold; font-size: 1.2em;}
 #container #contents #cont06 .cont06_left_box div a p em {position: inherit; display: block; font-size: 0.8em; font-weight: normal; color: #666; transform: inherit; padding: 10px;}
 #container #contents #cont06 .cont06_right_box {width:50%; height: 100vh; overflow: hidden; position: relative; display: inline-block; margin-left: -6px;}
-#container #contents #cont06 .cont06_right_box i {opacity: 0; position: absolute; right: 20%; transform: translateX(50%); top: 30%; color: #fff; text-align: center; font-size: 1.2em; line-height: 1.5em; font-style: normal; transition: all 2s;}
+#container #contents #cont06 .cont06_right_box i {opacity: 0; position: absolute; right: 50%; transform: translateX(50%); top: 30%; color: #fff; text-align: center; font-size: 1.2em; line-height: 1.5em; font-style: normal; transition: opacity 2s;}
 #container #contents #cont06 .cont06_right_box div {opacity: 0; width: calc(100% - 100px); margin: 50px; position: absolute; top: 40%; background: #fff; padding: 10px; box-sizing: border-box; transform: scale(0,0); transition: all 2s;}
 #container #contents #cont06 .cont06_left_box div a {display: block; width: 100%; height: 100%; border: 1px solid #ccc;}
 #container #contents #cont06 .cont06_right_box div a {display: block; width: 100%; height: 100%; border: 1px solid #ccc;}
@@ -272,14 +273,14 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
 /* cont06 + .active */
 #container #contents #cont06.active .cont06_topmenu div > div h2 {opacity: 1; transform: scale(1,1);}
 #container #contents #cont06.active .cont06_topmenu div > div em {opacity: 1;}
-#container #contents #cont06.active .cont06_left_box i {opacity: 1; left:50%;}
-#container #contents #cont06.active .cont06_right_box i {opacity: 1; right:50%;}
+#container #contents #cont06.active .cont06_left_box i {opacity: 1;}
+#container #contents #cont06.active .cont06_right_box i {opacity: 1;}
 #container #contents #cont06.active .cont06_left_box div {opacity: 1; transform: scale(1,1);}
 #container #contents #cont06.active .cont06_right_box div {opacity: 1; transform: scale(1,1);}
 #container #contents #cont06.active .cont06_topmenu .liner {height: 100vh;}
 #container #contents #cont06.active div a.more {opacity: 1;}
 
-#container #contents #cont07 h2 {opacity: 0; position: absolute; top: 0; left: 0; font-family: 'Roboto Condensed', sans-serif; font-size: 4em; font-weight: bold; color: #fff; user-select: none;  overflow: hidden; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); transition: all 2s;}
+#container #contents #cont07 h2 {opacity: 0; position: absolute; top: 0; left: 0; font-family: 'Roboto Condensed', sans-serif; font-size: 4em; font-weight: bold; color: #fff; user-select: none; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); transition: all 2s;}
 #container #contents #cont07 .cont07_box {opacity: 0; width: 100%; height: 550px; position: absolute; top: 80%; transform: translateY(-50%); overflow: hidden; background: url(../img/event_bg.png) repeat-x center center; transition: all 2s;}
 #container #contents #cont07 .cont07_box .box_slider .slider div {width: 100%; height: 550px;}
 #container #contents #cont07 .cont07_box .box_slider .slider div h3 {position: absolute; top: 20%; left:10%; color: #fff; font-size: 1.2em;}
@@ -326,9 +327,9 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     #container #contents #cont03.active a {top:65%;}
     #container #contents #cont04 .cont04_right {left:27%;}
     #container #contents #cont04 .cont04_right p {line-height: 1.4em;}
-    #container #contents #cont04.active .cont04_right {width:50%; height: auto;}
+    #container #contents #cont04.active .cont04_right {top: 38%; width:50%; height: auto;}
     #container #contents #cont05.active h2 {left:0;}
-    #container #contents #cont05 a {left: 90%;}
+    #container #contents #cont05 a {left: 90%; transition: opacity 3s;}
     #container #contents #cont05.active a {bottom: 80%;}
     #container #contents #cont06.active .cont06_left_box i {left:50%; font-size: 1em;}
     #container #contents #cont06 .cont06_left_box div {width: calc(100% - 100px); left:0;}
@@ -354,7 +355,7 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     #container #contents #cont02 .tv {left:-5%;}
     #container #contents #cont03 h2 {font-size: 2.5em;}
     #container #contents #cont03 p {left:5%;}
-    #container #contents #cont03.active .appliances {right:5%;}
+    #container #contents #cont03.active .appliances {right: 50%; transform: translate(50%, -50%); transition: opacity 3s;}
     #container #contents #cont04 h2 {font-size: 2.5em;}
     #container #contents #cont04.active h2 {left:5%;}
     #container #contents #cont04 .cont04_left {left:10%;}
@@ -364,7 +365,8 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     #container #contents #cont04 ul li p {bottom:-150%;}
     #container #contents #cont04 ul li p em {font-size: 1em;}
     #container #contents #cont05.active h2 {left:5%;}
-    #container #contents #cont05 a {left: 85%;}
+    #container #contents #cont05 .cont05_box {right: 5%;}
+    #container #contents #cont05 a {left: 85%; transition: opacity 3s, background .6s;}
     #container #contents #cont07 h2 {left:5%;}
     
 }
@@ -376,12 +378,9 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     #container #contents #cont02.active h2 {top:20%;}
     #container #contents #cont02 .tv {width:700px; height: 400px; left:0%;}
     #container #contents #cont04 h2 {font-size: 2em;}
-    #container #contents #cont04 ul {bottom:-50%;}
-    #container #contents #cont04 ul li { display: block; margin:0; width:100%;}
-    #container #contents #cont04 ul li img {height: 100%;}
-    #container #contents #cont04 ul li:hover img {transform: scale(1,1);}
-    #container #contents #cont04 ul li p {bottom: 0; left: 0; width: calc(100% - 250px); height: 125px; line-height: 1.2em;}
-    #container #contents #cont04 .cont04_right {top:35%;}
+    #container #contents #cont04 ul {display: none;}
+    #container #contents #cont04.active .cont04_left {top: 30%;}
+    #container #contents #cont04 .cont04_right {top: 50%;}
     #container #contents #cont04 .bg {right: -17%; top: -8%;}
     #container #contents #cont05 .cont05_box { width:100%; right: -5%;}
     #container #contents #cont05 .cont05_box div {width:29%;}
@@ -393,55 +392,66 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
 }
 
 @media all and (max-width:768px){
-    #container #contents #cont01 .phone {width: 444px; height: 440px; top:45%;}
+    #container #header { background: #fff; border-bottom: 2px solid #1428a0;}
+    #container #header:hover { background: #fff; }
+    #container #header .logo {left: 50%; transform: translateX(-50%); background-position: 0px 0px;}
+    #container #header:hover .logo {background-position: 0px 0px;}
+    #container #header .nav ul { background: rgba(0,0,0,0.6); }
+    #container #header .nav ul li a {color: #fff;}
+    #container #header:hover .nav ul li a {color: #fff;}
+    #container #header .m_nav { box-shadow: 0px 0px 4px rgba(0,0,0,0.3);}
+    #container #contents #cont01.active h2 {top: 20%;}
+    #container #contents #cont01 p {bottom: 80%;}
+    #container #contents #cont01 a {bottom: 20%;}
+    #container #contents #cont01 .phone {width: 444px; height: 440px; top: 30%;}
     #container #contents #cont01 .phone:before {width: 50%; height: 100%; background-size: cover; left:120px;}
     #container #contents #cont01 .phone:after {width: 50%; height: 100%; background-size: cover; right:0;}
     #container #contents #cont01.active .bottom_menu {display: none;}
-    #container #contents #cont02 h2 {right:5%; font-size: 2em; width: 70%;}
+    #container #contents #cont02 h2 {right:5%; font-size: 2em; width: 70%; top: 10%; right: 50%; transform: translateX(50%); white-space: nowrap;}
     #container #contents #cont02 .tv {width:500px; height:280px; left:10%;}
-    #container #contents #cont02 p {text-align: center; bottom:15%; font-size: 0.85em; width: 80%;}
-    #container #contents #cont02.active p {right: 50%; transform: translateX(50%); }
+    #container #contents #cont02 p {text-align: center; right: 50%; bottom:15%; transform: translateX(50%); font-size: 0.85em; width: 80%; transition: bottom .6s, opacity .6s;}
+    #container #contents #cont02.active p {right: 50%; bottom: 25%; transform: translateX(50%);}
     #container #contents #cont02 a {right: 50%; transform: translateX(50%); font-size: 1em;}
-    #container #contents #cont02.active a {bottom: 5%;}
+    #container #contents #cont02.active a {bottom: 18%;}
     #container #contents #cont03 h2 {top:15%;}
-    #container #contents #cont03.active p {font-size: 0.9em;}
+    #container #contents #cont03.active p {font-size: 1.2em;}
+    #container #contents #cont03 a {font-size: 1em;}
     #container #contents #cont03.active a {top:45%;}
     #container #contents #cont03 .appliances {top:70%;}
     #container #contents #cont03.active .cont03_slider {display: none;}
-    #container #contents #cont04.active h2 {font-size: 1.8em; top:15%; z-index: 2; width:70%;}
+    #container #contents #cont04.active h2 {font-size: 1.8em; top:9%; z-index: 2; width:70%; transition: opacity .6s;}
     #container #contents #cont04 .cont04_left {display: none;}
     #container #contents #cont04 .cont04_right {top: 20%;}
     #container #contents #cont04.active .cont04_right {display: none;}
-    #container #contents #cont04 ul li img {height: 150px;}
-    #container #contents #cont04 ul li p {height: 150px;}
-    #container #contents #cont04 ul li:hover p {width: 100%; left: 0;}
+    #container #contents #cont04 ul {display: block; left: 50%; bottom: 15%; transform: translateX(-50%); width: 80%; height: calc(100% - 30%); margin: 0;}
+    #container #contents #cont04 ul li {display: block; margin:0; width: calc(100% - 10px); height: 33.3333%;}
+    #container #contents #cont04 ul li:hover img {transform: scale(1,1);}
+    #container #contents #cont04 ul li p {bottom: -200px; left: 0; width: 100%; height: 120px; line-height: 1.2em; font-size: 1em;}
+    #container #contents #cont04 ul li:hover p {width: 100%; height: 100%;}
     #container #contents #cont05 h2 {font-size: 1.1em; top:15%;}
     #container #contents #cont05 .cont05_box {bottom: 5%;}
     #container #contents #cont05 .cont05_box h2 {font-size: 1.1em; top:15%;}
     #container #contents #cont05 .cont05_box div {display: none;}
     #container #contents #cont05 .cont05_box div h3 {font-size: 1em;}
     #container #contents #cont05 .cont05_box div p {font-size: 0.85em; height: auto;}
-    #container #contents #cont05 a {left:5%;}
-    #container #contents #cont05.active a {bottom:5%;}
+    #container #contents #cont05 a {left:5%; bottom:50%; font-size: 1em;}
+    #container #contents #cont05.active a {bottom:50%;}
     #container #contents #cont05 .bg {left:-30%; bottom:-10%;}
     #container #contents #cont06 > div {overflow: hidden;}
-    #container #contents #cont06 .cont06_topmenu {top:66px; height: 95px;}
-    #container #contents #cont06 .cont06_topmenu div > div h2 {font-size: 1.5em; height: 70px; line-height: 70px;}
+    #container #contents #cont06 .cont06_topmenu {top:66px; height: 60px;}
+    #container #contents #cont06 .cont06_topmenu div > div h2 {font-size: 1.5em; height: 35px; line-height: 35px;}
     #container #contents #cont06.active .cont06_topmenu .liner {display: none;}
-    #container #contents #cont06 .cont06_left_box {display: block; width:100%; height: 40vh;}
-    #container #contents #cont06 .cont06_left_box:first-child {margin-top: 20vh;}
     #container #contents #cont06 .cont06_topmenu div > div em {display: none;}
-    #container #contents #cont06 .cont06_right_box {display: block; width:100%; height: 40vh;}
+    #container #contents #cont06 .cont06_left_box {display: block; width:100%; height: 40vh;}
+    #container #contents #cont06 .cont06_left_box:first-child {margin-top: 14vh;}
     #container #contents #cont06.active .cont06_left_box i {display: none;}
-    #container #contents #cont06 .cont06_left_box div a img {width:100px; height: 100px;}
-    #container #contents #cont06 .cont06_left_box div a p {display: none;}
-    #container #contents #cont06 .cont06_left_box {display: inline-block;
-    width: 50%; height: 100vh; margin-top: 0;}
+    #container #contents #cont06 .cont06_left_box div {top:0; margin: 0 50px;}
+    #container #contents #cont06 .cont06_left_box div a img {width:200px; height: 200px;}
+    #container #contents #cont06 .cont06_left_box {display: block; width: 100%; height: 36vh;; margin-top: 0;}
+    #container #contents #cont06 .cont06_right_box {display: block; width:100%; height: 50vh; margin: 0;}
     #container #contents #cont06.active .cont06_right_box i {display: none;}
-    #container #contents #cont06 .cont06_right_box div a img {width:100px; height: 100px;}
-    #container #contents #cont06 .cont06_right_box div a p {display: none;}
-    #container #contents #cont06 .cont06_right_box {display: inline-block;
-    width: 50%; height: 100vh;}
+    #container #contents #cont06 .cont06_right_box div {top: 0; margin: 0 50px;}
+    #container #contents #cont06 .cont06_right_box div a img {width:200px; height: 200px;}
     #container #contents #cont06 div a.more {display: none;}
     #container #contents #cont07 h2 {font-size: 2.5em;}
     #container #contents #cont07 .cont07_box .box_slider .slider div h3 {display: none;}
@@ -450,26 +460,54 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     #container #footer .box ul li {margin: 15px; width: 10px; height: 10px;}
 }
 
-@media all and (max-width:600px){
-    #container #contents #cont02 h2 {font-size: 1.5em; width: 80%;}
-    #container #contents #cont02.active .tv {left:-3%;}
-    #container #contents #cont03.active h2 {font-size: 1.5em;}
-    #container #contents #cont04 ul {bottom:5%;}
-    #container #contents #cont04 ul li p:before {content: ''; position: absolute; left: 0; top: 0; display: block; width:100%; height:100%; background:linear-gradient(to top,#000, transparent);}
-    #container #contents #cont06 .cont06_left_box {display: block; width: 100%; height: 40vh; margin-top: 20vh;}
-    #container #contents #cont06 .cont06_right_box {display: block; width: 100%; height: 40vh;}
-    #container #contents #cont06.active .cont06_left_box div {top:5%; }
-    #container #contents #cont06.active .cont06_right_box div {top:0; }
-    
-}
-
 @media all and (max-width:480px){
     .portfolio_popup {width: calc(100% - 40px);}
+    #container #header .logo {width: 130px; height: 22px;}
+    #container #contents #cont01 p {width: 66%; font-size: 1em; }
+    #container #contents #cont01.active p {bottom: 83%;}
+    #container #contents #cont02 h2 {width: 100%; padding-left: 5%; font-size: 1.3em;}
+    #container #contents #cont02.active p {bottom: 15%;}
+    #container #contents #cont02.active a {bottom: 5%;}
+    #container #contents #cont02.active .tv {left:-3%;}
+    #container #contents #cont03.active h2 {font-size: 1.5em;}
+    #container #contents #cont03 p {left:-5%; font-size: 0.9em; transition: opacity .6s, left .6s;}
+    #container #contents #cont03.active p {left:5%; font-size: 0.9em; }
+    #container #contents #cont04.active h2 {top: 12%; font-size: 1.2em; width: 100%;}
+    #container #contents #cont04 ul {bottom: 2%;} 
+    #container #contents #cont04 ul li p {bottom: -200px;}
+    #container #contents #cont04 ul li p:before {content: ''; position: absolute; left: 0; top: 0; display: block; width:100%; height:100%; background:linear-gradient(to top,#000, transparent);}
+    #container #contents #cont06 .cont06_left_box {display: block; width: 100%; height: 40vh;}
+    #container #contents #cont06 .cont06_left_box:first-child { margin-top: 20vh;}
+    #container #contents #cont06 .cont06_left_box div a img {padding: 0;}
+    #container #contents #cont06 .cont06_left_box div a h4 {padding: 10px 0;}
+    #container #contents #cont06 .cont06_left_box div a p {display: none;}
+    #container #contents #cont06 .cont06_right_box {display: block; width: 100%; height: 40vh;}
+    #container #contents #cont06 .cont06_right_box div a p {display: none;}
+    #container #contents #cont06.active .cont06_left_box div {top:5%; }
+    #container #contents #cont06.active .cont06_right_box div {top:0; }
+    #container #contents #cont07 h2 {transition: opacity .6s;}
+    #container #contents #cont07.active h2 {font-size: 1.6em;}
+    #container #contents #cont07 .cont07_box .box_slider .slider div div .case {margin: 0;}
+}
+
+@media all and (max-width:360px){
+    #container #contents #cont01 p {width: 72%;}
     #container #contents #cont01 h2 {font-size: 2.5em;}
-    #container #contents #cont01.active h2 {top:15%;}
-    #container #contents #cont01 p {font-size: 1em; width:90%; bottom:70%;}
-    #container #contents #cont01.active a {font-size: 1em; bottom:58%;}
+    #container #contents #cont01 p {width:90%; bottom:70%;}
+    #container #contents #cont01.active a {font-size: 1em; bottom: 20%;}
     #container #contents #cont01.active .phone:before {animation: none;}
+    #container #contents #cont02 h2 {left:5%; transform: translateX(0); width: 75%; white-space: unset;}
+    #container #contents #cont02.active p {bottom: 20%;}
+    #container #contents #cont02.active a {bottom: 10%;}
+    #container #contents #cont03.active a {top: 40%;}
+    #container #contents #cont04 ul {bottom: 10%;}
+    #container #contents #cont06 .cont06_left_box div {top: 50%; transform: scale(0,0) translateY(-50%);}
+    #container #contents #cont06.active .cont06_left_box div {top: 50%; transform: scale(1,1) translateY(-50%);}
+    #container #contents #cont06 .cont06_left_box div a h4 {padding: 0;}
+    #container #contents #cont06 .cont06_left_box div a img {width:100px; height:100px;}
+    #container #contents #cont06 .cont06_right_box div a h4 {padding: 0;}
+    #container #contents #cont06 .cont06_right_box div a img {width:100px; height:100px;}
+    #container #contents #cont07.active h2 {top: 15%;}
     #container #contents #cont07 .cont07_box .box_slider .slider div i {font-size: 2em; top: 50%;}
     #container #contents #cont07 .cont07_box .box_slider .slider div h3 {font-size: 1em; width: 80%;}
     #container #contents #cont07 .cont07_box .box_slider .slider div p {top:180px; font-size: 1em;}
@@ -481,4 +519,6 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     
     #container #contents #cont07 .cont07_box .box_slider .swiper-button-prev {left: 10px; top: 70%;}
     #container #contents #cont07 .cont07_box .box_slider .swiper-button-next {right: 75%; top: 70%;}
+    #container #footer .box {right: 50%; top: 93%; transform: translateX(50%);}
+    #container #footer .box ul li {display: inline-block; margin: 5px;}
 }

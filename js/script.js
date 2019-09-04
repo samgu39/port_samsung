@@ -69,73 +69,6 @@ $(document).ready(function(){
         var winScroll = $(this).scrollTop();
         var ftNav = $('#container #footer .box ul li');
         
-        /*
-        if(winScroll >= contents.eq(0).offset().top){
-            contents.removeClass('active');
-            contents.eq(0).addClass('active');
-            ftNav.removeClass('active');
-            ftNav.eq(0).addClass('active');
-            nav.removeClass('active');
-            nav.eq(0).addClass('active');
-            navBox.css({ left : nav.eq(0).position().left, width : nav.eq(0).width() });
-            n = 0;
-        };
-        if(winScroll >= contents.eq(1).offset().top - 300){
-            contents.eq(1).addClass('active');
-            ftNav.removeClass('active');
-            ftNav.eq(1).addClass('active');
-            nav.removeClass('active');
-            nav.eq(1).addClass('active');
-            navBox.css({ left : nav.eq(1).position().left, width : nav.eq(1).width() });
-            n = 1;
-        };
-        if(winScroll >= contents.eq(2).offset().top - 300){
-            contents.eq(2).addClass('active');
-            ftNav.removeClass('active');
-            ftNav.eq(2).addClass('active');
-            nav.removeClass('active');
-            nav.eq(2).addClass('active');
-            navBox.css({ left : nav.eq(2).position().left, width : nav.eq(2).width() });
-            n = 2;
-        };
-        if(winScroll >= contents.eq(3).offset().top - 300){
-            contents.eq(3).addClass('active');
-            ftNav.removeClass('active');
-            ftNav.eq(3).addClass('active');
-            nav.removeClass('active');
-            nav.eq(3).addClass('active');
-            navBox.css({ left : nav.eq(3).position().left, width : nav.eq(3).width() });
-            n = 3;
-        };
-        if(winScroll >= contents.eq(4).offset().top - 300){
-            contents.eq(4).addClass('active');
-            ftNav.removeClass('active');
-            ftNav.eq(4).addClass('active');
-            nav.removeClass('active');
-            nav.eq(4).addClass('active');
-            navBox.css({ left : nav.eq(4).position().left, width : nav.eq(4).width() });
-            n = 4;
-        };
-        if(winScroll >= contents.eq(5).offset().top - 300){
-            contents.eq(5).addClass('active');
-            ftNav.removeClass('active');
-            ftNav.eq(5).addClass('active');
-            nav.removeClass('active');
-            nav.eq(5).addClass('active');
-            navBox.css({ left : nav.eq(5).position().left, width : nav.eq(5).width() });
-            n = 5;
-        };
-        if(winScroll >= contents.eq(6).offset().top - 300){
-            contents.eq(6).addClass('active');
-            ftNav.removeClass('active');
-            ftNav.eq(6).addClass('active');
-            nav.removeClass('active');
-            nav.eq(6).addClass('active');
-            navBox.css({ left : nav.eq(6).position().left, width : nav.eq(6).width() });
-            n = 6;
-        };
-        */
-        
         for(var i = 0; i < contents.length; i++){
           if(winScroll >= contents.eq(i).offset().top){
               contents.removeClass('active');
@@ -285,5 +218,14 @@ $(document).ready(function(){
     });
     
     // 우측 메뉴 이동 스크립트
+    
+    $(window).resize(function(){
+        if($(window).width() > 1280 ){
+            $('#container #header .nav').removeAttr('style');
+            $('#container #header .nav .bar').css({"width":"105"+"px"});
+        };
+    });
+    
+    // window width 값이 PC버전으로 돌아왔을 때 nav에 style 제거
     
 });
