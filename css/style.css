@@ -373,7 +373,7 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
 
 @media all and (max-width:960px){
     #container #contents #cont01 p {bottom:70%;}
-    #container #contents #cont01 a {bottom:5%;}
+    #container #contents #cont01 a {bottom:50%;}
     #container #contents #cont02 h2 {font-size: 2em; right: 5%;}
     #container #contents #cont02.active h2 {top:20%;}
     #container #contents #cont02 .tv {width:700px; height: 400px; left:0%;}
