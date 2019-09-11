@@ -440,7 +440,7 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     #container #contents #cont05.active a {bottom:50%;}
     #container #contents #cont05 .bg {left:-30%; bottom:-10%;}
     #container #contents #cont06 > div {overflow: hidden;}
-    #container #contents #cont06 .cont06_topmenu {top:66px; height: 60px;}
+    #container #contents #cont06 .cont06_topmenu {top:55px; height: 60px;}
     #container #contents #cont06 .cont06_topmenu div > div h2 {font-size: 1.5em; height: 35px; line-height: 35px;}
     #container #contents #cont06.active .cont06_topmenu .liner {display: none;}
     #container #contents #cont06 .cont06_topmenu div > div em {display: none;}
@@ -499,8 +499,10 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     #container #contents #cont01.active a {font-size: 1em; bottom: 20%;}
     #container #contents #cont01.active .phone:before {animation: none;}
     #container #contents #cont02 h2 {left:5%; transform: translateX(0); width: 75%; white-space: unset;}
-    #container #contents #cont02.active p {bottom: 20%;}
-    #container #contents #cont02.active a {bottom: 10%;}
+	#container #contents #cont02.active h2 {top:15%;}
+    #container #contents #cont02.active p {bottom: 25%;}
+    #container #contents #cont02.active a {bottom: 15%;}
+	#container #contents #cont02.active .tv {margin-top: -50px;}
     #container #contents #cont03.active a {top: 40%;}
     #container #contents #cont04 ul {bottom: 10%;}
     #container #contents #cont06 .cont06_left_box div {top: 50%; transform: scale(0,0) translateY(-50%);}
@@ -521,6 +523,6 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     
     #container #contents #cont07 .cont07_box .box_slider .swiper-button-prev {left: 10px; top: 70%;}
     #container #contents #cont07 .cont07_box .box_slider .swiper-button-next {right: 75%; top: 70%;}
-    #container #footer .box {right: 50%; top: 93%; transform: translateX(50%);}
+    #container #footer .box {right: 50%; top: 93%; transform: translateX(50%); white-space: nowrap;}
     #container #footer .box ul li {display: inline-block; margin: 5px;}
 }
