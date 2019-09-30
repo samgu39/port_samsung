@@ -392,6 +392,7 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
 }
 
 @media all and (max-width:768px){
+	body {overflow-y: scroll;}
     #container #header {height: 55px; background: #fff; border-bottom: 2px solid #1428a0;}
     #container #header:hover { background: #fff; }
     #container #header .logo {left: 50%; top: 15px; transform: translateX(-50%); background-position: 0px 0px;}
@@ -409,7 +410,7 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     #container #contents #cont01 .phone:before {width: 50%; height: 100%; background-size: cover; left:120px;}
     #container #contents #cont01 .phone:after {width: 50%; height: 100%; background-size: cover; right:0;}
     #container #contents #cont01.active .bottom_menu {display: none;}
-    #container #contents #cont02 h2 {right:5%; font-size: 2em; width: 70%; top: 10%; right: 50%; transform: translateX(50%); white-space: nowrap;}
+    #container #contents #cont02 h2 {right:5%; font-size: 2em; width: 70%; top: 10%; right: 50%; transform: translateX(50%);}
     #container #contents #cont02 .tv {width:500px; height:280px; left:10%;}
     #container #contents #cont02 p {text-align: center; right: 50%; bottom:15%; transform: translateX(50%); font-size: 0.85em; width: 80%; transition: bottom .6s, opacity .6s;}
     #container #contents #cont02.active p {right: 50%; bottom: 25%; transform: translateX(50%);}
@@ -449,8 +450,8 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     #container #contents #cont06.active .cont06_left_box i {display: none;}
     #container #contents #cont06 .cont06_left_box div {top:0; margin: 0 50px;}
     #container #contents #cont06 .cont06_left_box div a img {width:200px; height: 200px;}
-    #container #contents #cont06 .cont06_left_box {display: block; width: 100%; height: 36vh;; margin-top: 0;}
-    #container #contents #cont06 .cont06_right_box {display: block; width:100%; height: 50vh; margin: 0;}
+    #container #contents #cont06 .cont06_left_box {display: block; width: 100%; height: 40vh;; margin-top: 0;}
+    #container #contents #cont06 .cont06_right_box {display: block; width:100%; height: 50vh; margin: 0; margin-top: 30px;}
     #container #contents #cont06.active .cont06_right_box i {display: none;}
     #container #contents #cont06 .cont06_right_box div {top: 0; margin: 0 50px;}
     #container #contents #cont06 .cont06_right_box div a img {width:200px; height: 200px;}
@@ -460,6 +461,38 @@ br {font-family: AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,
     #container #contents #cont07 .cont07_box .box_slider .slider div .case_box:after {content: ''; display: block; width:86%; height: 50%; position: absolute; bottom: -60%; background:linear-gradient(to top,#fff, transparent); box-shadow: 0px 30px 10px rgba(255,255,255,0.8); }
     #container #footer .box {right: 5px; z-index: 1;}
     #container #footer .box ul li {margin: 15px; width: 10px; height: 10px;}
+}
+
+@media only screen and (max-width: 768px) and (orientation:landscape){
+	#container #contents #cont01.active h2 {top:30%;}
+	#container #contents #cont01.active p {bottom:70%;}
+	#container #contents #cont02.active h2 {left: 10%; transform: none;}
+	#container #contents #cont02.active .tv {top: 20%; transform: none;}
+	#container #contents #cont02.active .tv:hover {transform: none;}
+	#container #contents #cont02.active p {right: 10%; transform: none; text-align: right;}
+	#container #contents #cont02.active a {right: 10%; bottom: 10%; transform: none;}
+	#container #contents #cont03.active h2 {top: 20%; font-size: 2em;}
+	#container #contents #cont03.active p {top: 40%; font-size: 1em;}
+	#container #contents #cont03.active a {top: 80%;}
+	#container #contents #cont03.active .appliances {opacity: 0.8; top: 80%;}
+	#container #contents #cont04.active h2 {top: 35%; font-size: 1.5em;}
+	#container #contents #cont04 ul {width: 90%; height: auto;}
+	#container #contents #cont04.active ul li {float: left; width: 33.3333%;}
+	#container #contents #cont05.active h2 {top: 20%;}
+	#container #contents #cont05.active a {bottom: 10%;}
+	#container #contents #cont06 .cont06_topmenu {display: none;}
+	#container #contents #cont06 .cont06_left_box {float: left; width: 50%; height: calc(100% - 20vh); margin-top: 17vh !important;}
+	#container #contents #cont06.active .cont06_left_box div { width: 80%; height: 300px; margin: 0 20px;}
+	#container #contents #cont06 .cont06_right_box {float: right; width: 50%; height: calc(100% - 20vh); margin-top: 17vh;}
+	#container #contents #cont06.active .cont06_right_box div {width: 80%; height: 300px; margin: 0 20px;}
+	#container #contents #cont06 .cont06_left_box div a p em, #container #contents #cont06 .cont06_left_box div a p, #container #contents #cont06 .cont06_right_box div a p em, #container #contents #cont06 .cont06_right_box div a p {display: none;}
+	#container #contents #cont07.active h2 {top: 20%; z-index: 10;}
+	#container #contents #cont07.active .cont07_box { top: 60%; height: 70vh;}
+	#container #contents #cont07 .cont07_box .box_slider .slider div i {top: 30px; font-size: 2em;}
+	#container #contents #cont07 .cont07_box .box_slider .slider div p {top: 80px; font-size: 1em;}
+	#container #contents #cont07 .cont07_box .box_slider .slider div:nth-child(1) .img {top: 80px; background-size: cover;}
+	#container #contents #cont07 .cont07_box .box_slider .slider div:nth-child(2) .img {top: 0;}
+	#container #contents #cont07 .cont07_box .box_slider .slider div .case_box {top: 80px;}
 }
 
 @media all and (max-width:480px){

@@ -90,45 +90,89 @@ $(document).ready(function(){
     var n = 0;
     var h;
     var box = 0;
-    
-    $(window).mousewheel(function(e, delta){
-        var h = $(window).height();
-        
-        if ($('html, body').is(":animated")){
-            return;
-        }
-        
-        if(delta > 0){
-            if(n > 0){
-              n--;
-            }
-        }else{
-            if(n < 6){
-              n++;  
-            }
-        }
-        //console.log(n);
-        box= n * h;
-        
-        $('html, body').animate({ scrollTop : box },800);
-    });
-    
-    // 마우스 휠 패럴랙스 효과 스크립트
-    
-    if($(window).width() > 768 ){
-        $(window).resize(function(){
-        var h = $(window).height();
-        
-        //console.log(winHeight);
-        $('#container #contents > section').css({ height : h });
-        
-        });
+	
+	if($(window).width() > 768 ){
 
-        $(window).trigger('resize');
-    }else if($(window).width() < 768){
-        $('#contents > section').css("height","100%");
-    }
+		$(window).mousewheel(function(e, delta){
+			var h = $(window).height();
+
+			if ($('html, body').is(":animated")){
+				return;
+			}
+
+			if(delta > 0){
+				if(n > 0){
+				  n--;
+				}
+			}else{
+				if(n < 6){
+				  n++;  
+				}
+			}
+			//console.log(n);
+			box= n * h;
+
+			$('html, body').animate({ scrollTop : box },800);
+		});
+
+		// 마우스 휠 패럴랙스 효과 스크립트
+
+		$(window).resize(function(){
+		var h = $(window).height();
+
+		//console.log(winHeight);
+		$('#container #contents > section').css({ height : h });
+
+		});
+
+		$(window).trigger('resize');
+
+	}else if($(window).width() < 768){
+			$('#contents > section').css("height","960px");
+	};
     
+	$(window).resize(function(){
+		if($(window).width() > 768 ){
+
+			$(window).mousewheel(function(e, delta){
+				var h = $(window).height();
+
+				if ($('html, body').is(":animated")){
+					return;
+				}
+
+				if(delta > 0){
+					if(n > 0){
+					  n--;
+					}
+				}else{
+					if(n < 6){
+					  n++;  
+					}
+				}
+				//console.log(n);
+				box= n * h;
+
+				$('html, body').animate({ scrollTop : box },800);
+			});
+
+			// 마우스 휠 패럴랙스 효과 스크립트
+
+			$(window).resize(function(){
+			var h = $(window).height();
+
+			//console.log(winHeight);
+			$('#container #contents > section').css({ height : h });
+
+			});
+
+			$(window).trigger('resize');
+
+		}else if($(window).width() < 768){
+				$('#contents > section').css("height","100%");
+		};
+	});
+	
     // 화면의 사이즈가 변경되었을 경우 height 값을 맞춰주는 스크립트
     
     $(window).scroll(function(){
@@ -222,7 +266,7 @@ $(document).ready(function(){
     $(window).resize(function(){
         if($(window).width() > 1280 ){
             $('#container #header .nav').removeAttr('style');
-            $('#container #header .nav .bar').css({"width":"105"+"px"});
+            $('#container #header .nav .bar').css({"width":"105" + "px"});
         };
     });
     
